@@ -9,7 +9,7 @@ unknown_image = face_recognition.load_image_file(sys.argv[1])
 unknown_encoding = face_recognition.face_encodings(unknown_image)[0]
 #print(unknown_encoding)
 
-with open('/home/sid/Desktop/SE_Facial_Recognition/true_encodings.txt', 'r') as myfile:
+with open('./true_encodings.txt', 'r') as myfile:
     data = myfile.read().replace('\n','')
 
 x = data.split('][')
